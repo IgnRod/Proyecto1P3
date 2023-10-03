@@ -8,9 +8,9 @@ package Modelo;
  * @author ignac
  */
 public class TipoInstrumento {
-    public String Codigo;
-    public String Nombre;
-    public String Unidad;
+    private String Codigo;
+    private String Nombre;
+    private String Unidad;
     public TipoInstrumento(String c, String n, String u){
         this.Codigo = c;
         this.Nombre = n;

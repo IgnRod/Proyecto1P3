@@ -7,13 +7,22 @@
  *
  * @author ESCINF
  */
+import Controlador.Controlador;
+import Modelo.*;
 public class Main {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        try{
+        Servicio.getInstance().addTipoInstrumento(new TipoInstrumento("1","2","3"));
+        Servicio.getInstance().addTipoInstrumento(new TipoInstrumento("1","2","3"));
+        Servicio.getInstance().addTipoInstrumento(new TipoInstrumento("3","2","3"));
+        
+        Servicio.getInstance().removeTipoInstrumento("1");
+
+        } catch(Exception e){}
     }
     
 }
